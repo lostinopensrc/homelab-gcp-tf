@@ -1,13 +1,12 @@
 # Local .terraform directories
-module/vpc/.terraform/*
+**/.terraform/*
 
 # .tfstate files
-module/vpc/*.tfstate
-module/vpc/*.tfstate.*
+**/*.tfstate
+**/*.tfstate.*
 
-
-# Exclude all .tfvars files, which are likely to contain sensitive data, such as
-# password, private keys, and other secrets. These should not be part of version 
-# control as they are data points which are potentially sensitive and subject 
-# to change depending on the environment.
-module/vpc/*.tfvars
+# Ignore any .tfvars files that are generated automatically for each Terraform run. Most
+# .tfvars files are managed as part of configuration and so should be included in
+# version control.
+#
+**/*.tfvars

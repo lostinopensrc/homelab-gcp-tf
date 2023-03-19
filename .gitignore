@@ -2,7 +2,7 @@
 module/*/.terraform/*
 
 # .tfstate files
-module/*/.tfstate
+module/*/*.tfstate
 module/*/*.tfstate.*
 
 
@@ -11,4 +11,3 @@ module/*/*.tfstate.*
 # control as they are data points which are potentially sensitive and subject 
 # to change depending on the environment.
 module/*/*.tfvars
-module/*/*.tfvars.json

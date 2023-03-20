@@ -1,4 +1,4 @@
-project-id = "cogent-tide-366115"
-network-name = "homelab-vpc01"
+project_id = "cogent-tide-366115"
+network_name = "homelab-vpc01"
 
 

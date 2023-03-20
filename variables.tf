@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-variable "project_id" {
+variable "project-id" {
   description = "The ID of the project where this VPC will be created"
   type        = string
 }
 
-variable "network_name" {
+variable "network-name" {
   description = "The name of the network being created"
   type        = string
 }

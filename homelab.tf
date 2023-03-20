@@ -18,7 +18,7 @@
 	VPC configuration
  *****************************************/
 module "vpc" {
-  source = "../modules/vpc"
+  source = "./modules/vpc"
   name   = var.network-name
   project = var.project-id
 }

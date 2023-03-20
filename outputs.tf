@@ -15,7 +15,7 @@
  */
 
 output "network" {
-  value       = module.vpc.network
+  value       = vpc.network
   description = "The VPC resource being created"
 }
 

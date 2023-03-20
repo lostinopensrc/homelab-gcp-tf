@@ -19,6 +19,6 @@
  *****************************************/
 module "vpc" {
   source = "./modules/vpc"
-  name   = var.network_name
-  project = var.project_id
+  network_name = var.network_name
+  project_id = var.project_id
 }

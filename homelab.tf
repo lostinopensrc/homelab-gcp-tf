@@ -2,6 +2,7 @@ module "vpc" {
   source = "./modules/vpc"
   network_name = var.network_name
   project_id = var.project_id
+  auto_create_subnetworks = false
 }
 module "gcs" {
   source = "./modules/gcs"

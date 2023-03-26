@@ -8,18 +8,7 @@ variable "network_name" {
   type        = list(string)
 }
 
-variable "name" {
-  description = "The name of the bucket."
-  type        = string
-}
-
-variable "location" {
-  description = "The location of the bucket."
-  type        = string
-}
-
-variable "force_destroy" {
-  description = "When deleting a bucket, this boolean option will delete all contained objects. If false, Terraform will fail to delete buckets which contain objects."
-  type        = bool
-  default     = false
+variable "buckets" {
+  type        = list(map(string))
+  description = "The list of buckets being created"
 }

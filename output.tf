@@ -9,13 +9,7 @@ output "network_name"{
 }
 
 
-output "bucket" {
-  description = "The created storage bucket"
+output "buckets" {
+  description = "The created storage buckets"
   value       = module.gcs.bucket
 }
-
-output "name" {
-  description = "Bucket name."
-  value       = module.gcs.name
-}
-

@@ -5,8 +5,6 @@ module "vpc" {
 }
 module "gcs" {
   source = "./modules/gcs"
-  name                        = var.name
+  buckets                     = var.buckets
   project_id                  = var.project_id
-  location                    = var.location
-  force_destroy               = var.force_destroy
 }

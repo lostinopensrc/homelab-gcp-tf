@@ -5,7 +5,7 @@ output "network"{
 
 output "network_name"{
   description = "Name of the vpc network"
-  value = module.vpc.network_name
+  value = [for network in module.vpc.network: network.name]
 }
 
 

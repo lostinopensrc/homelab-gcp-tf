@@ -5,7 +5,7 @@ variable "project_id" {
 
 variable "network_name" {
   description = "The name of the network being created"
-  type        = string
+  type        = list(string)
 }
 
 variable "name" {

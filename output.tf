@@ -8,7 +8,10 @@ output "network_name"{
   value = [for network in module.vpc.network: network.name]
 }
 
-
+output "subnets" {
+  description = "The created subnets"
+  value       = module.subnets.subnets
+}
 output "buckets" {
   description = "The created storage buckets"
   value       = module.gcs.bucket

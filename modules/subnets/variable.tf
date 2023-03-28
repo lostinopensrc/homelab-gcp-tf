@@ -3,16 +3,7 @@ variable "project_id" {
   type        = string
 }
 
-variable "network_name" {
-  description = "The name of the network being created"
-  type        = list(string)
-}
-
 variable "subnets" {
   type        = list(map(string))
   description = "The list of subnets being created"
-} 
-variable "buckets" {
-  type        = list(map(string))
-  description = "The list of buckets being created"
 }

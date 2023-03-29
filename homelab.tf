@@ -13,6 +13,7 @@ module "subnets" {
   source                             = "./modules/subnets"
   project_id                         = var.project_id
   subnets                            = var.subnets
+  secondary_ranges                   = var.secondary_ranges
   depends_on = [
       module.vpc
   ] 

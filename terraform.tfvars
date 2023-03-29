@@ -20,6 +20,30 @@ subnets = [
 ]
 
 
+secondary_ranges = {
+
+    homelab-subnet-01 = [
+        {
+        range_name    = "homelab-subnet-01-pods-secondary-01"
+        ip_cidr_range = "192.168.64.0/29"
+        },
+        {
+        range_name    = "homelab-subnet-01-services-secondary-01"
+        ip_cidr_range = "192.168.65.0/29"
+        }
+    ]
+    homelab-subnet-02 = [
+        {
+        range_name    = "homelab-subnet-02-pods-secondary-02"
+        ip_cidr_range = "192.168.66.0/29"
+        },
+        {
+        range_name    = "homelab-subnet-02-services-secondary-02"
+        ip_cidr_range = "192.168.67.0/29"
+        }
+    ]
+}
+    
 
 buckets =   [
     {
